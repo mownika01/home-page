@@ -711,6 +711,32 @@
         display: flex;
       }
 
+    #loader {
+      display: flex;
+      gap: 20px;
+      background: #fff;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .dice {
+      width: 72px;
+      height: 72px;
+      animation: bounce 0.5s ease-in-out infinite alternate;
+      transform-origin: center;
+    }
+
+    .dice:nth-child(2) {
+      animation-delay: 0.5s, 0s;
+     
+    }
+
+    @keyframes bounce {
+      0% { transform: translateY(0); }
+      100% { transform: translateY(-20px);  }
+    }
+
       @media screen and (min-width: 1441px) and (max-width: 2560px) {
         .class-47 {
           width: 400px;
@@ -734,7 +760,20 @@
   </head>
  
   <body>
-    <div class="class-1">
+
+    <div id="loader">
+   
+      <svg class="dice" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 72 72" fill="none">
+        <path d="M54 0H18C8.0703 0 0 8.0781 0 18V54C0 63.9219 8.0703 72 18 72H54C63.9297 72 72 63.9219 72 54V18C72 8.0781 63.9297 0 54 0ZM20 58C16.6914 58 14 55.3086 14 52C14 48.6914 16.6914 46 20 46C23.3086 46 26 48.6914 26 52C26 55.3086 23.3086 58 20 58ZM20 26C16.6914 26 14 23.3086 14 20C14 16.6914 16.6914 14 20 14C23.3086 14 26 16.6914 26 20C26 23.3086 23.3086 26 20 26ZM36 42C32.6914 42 30 39.3086 30 36C30 32.6914 32.6914 30 36 30C39.3086 30 42 32.6914 42 36C42 39.3086 39.3086 42 36 42ZM52 58C48.6914 58 46 55.3086 46 52C46 48.6914 48.6914 46 52 46C55.3086 46 58 48.6914 58 52C58 55.3086 55.3086 58 52 58ZM52 26C48.6914 26 46 23.3086 46 20C46 16.6914 48.6914 14 52 14C55.3086 14 58 16.6914 58 20C58 23.3086 55.3086 26 52 26Z" fill="#F3C142"/>
+      </svg>
+     
+    
+      <svg class="dice" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 72 72" fill="none">
+        <path d="M54 0H18C8.0703 0 0 8.0781 0 18V54C0 63.9219 8.0703 72 18 72H54C63.9297 72 72 63.9219 72 54V18C72 8.0781 63.9297 0 54 0ZM20 26C16.6914 26 14 23.3086 14 20C14 16.6914 16.6914 14 20 14C23.3086 14 26 16.6914 26 20C26 23.3086 23.3086 26 20 26ZM36 42C32.6914 42 30 39.3086 30 36C30 32.6914 32.6914 30 36 30C39.3086 30 42 32.6914 42 36C42 39.3086 39.3086 42 36 42ZM52 58C48.6914 58 46 55.3086 46 52C46 48.6914 48.6914 46 52 46C55.3086 46 58 48.6914 58 52C58 55.3086 55.3086 58 52 58Z" fill="#1E9C39"/>
+      </svg>
+    </div>
+
+    <div class="class-1" id="main-content">
       <div class="class-2">
         <div class="class-3"></div>
  
@@ -1338,5 +1377,13 @@
         </div>
       </div>
     </div>
+    <script>
+      window.onload = function () {
+        setTimeout(() => {
+          document.getElementById('loader').style.display = 'none';
+          document.getElementById('main-content').style.display = 'flex';
+        }, 5000);
+      };
+    </script>
   </body>
 </html>

@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
  
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
  
     <style>
       * {
@@ -69,7 +72,19 @@
         box-shadow: 5px 5px 0px 0px #01974624;
         border-radius: 8px;
       }
- 
+      .class-6 h2, p {
+        font-family: "inter";
+      }
+
+      .class-6-h2 {
+        font-size: 24px;
+        font-weight: 500;
+      }
+
+      .class-6-p {
+        font-size: 15px;
+        font-weight: 400;
+      }
       .class-7 {
         color: #7cc13a;
         background-color: white;
@@ -77,8 +92,26 @@
         padding: 10px 40px;
         border: 1px solid #7cc13a;
         width: fit-content;
+        cursor: pointer;
       }
- 
+
+      .button-green:hover {
+        background: #7cc13a;
+        color: white;
+      }
+      /* .button-green:hover svg path{
+        fill: white;
+      }
+      .button-white:hover {
+          background: white;
+          color: #7cc13a;
+          border: 1px solid #7cc13a;
+      }
+
+      .button-white:hover svg path{
+        fill: #7cc13a;
+      } */
+
       .class-8 {
         position: absolute;
         bottom: 10%;
@@ -96,6 +129,8 @@
         display: flex;
         gap: 10px;
         align-items: center;
+        cursor: pointer;
+        font-family: "inter";
       }
  
       .class-10 {
@@ -107,6 +142,8 @@
         display: flex;
         gap: 10px;
         align-items: center;
+        cursor: pointer;
+        font-family: "inter";
       }
  
       .class-11 {
@@ -145,6 +182,7 @@
         font-size: 16px;
         text-align: center;
         font-weight: 700;
+        font-family: "inter";
       }
  
       .class-15 {
@@ -162,19 +200,25 @@
         padding: 8px 16px;
         border-radius: 8px;
         background-color: #e9fff370;
-        width: 70px;
-        height: 60px;
+        width: 75px;
+        height: 70px;
         display: flex;
         align-items: center;
         flex-direction: column;
         gap: 5px;
         justify-content: center;
+        cursor: pointer;
+      }
+      .box-hover:hover {
+         transform: translateY(-5px);
+         transition: 500ms;
       }
  
       .class-17 {
         color: #019746;
-        font-size: 13px;
+        font-size: 12px;
         font-weight: 500;
+        font-family: "inter";
       }
  
       .class-18 {
@@ -210,9 +254,9 @@
  
       .class-22 {
         position: absolute;
-        top: 60px;
+        top: 46px;
         width: 80px;
-        height: 38px;
+        height: 64px;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -275,6 +319,7 @@
         font-size: 16px;
         text-align: center;
         font-weight: 700;
+        font-family: "inter";
       }
  
       .class-29 {
@@ -282,19 +327,21 @@
         padding: 9px 16px;
         border-radius: 8px;
         background-color: #ffefe3;
-        width: 70px;
-        height: 60px;
+        width: 75px;
+        height: 70px;
         display: flex;
         align-items: center;
         flex-direction: column;
         gap: 5px;
         justify-content: center;
+        cursor: pointer;
       }
  
       .class-30 {
         color: #d86221;
-        font-size: 13px;
+        font-size: 12px;
         font-weight: 500;
+        font-family: "inter";
       }
  
       .class-31 {
@@ -317,6 +364,7 @@
         font-size: 16px;
         text-align: center;
         font-weight: 700;
+        font-family: "inter";
       }
  
       .class-33 {
@@ -324,19 +372,21 @@
         padding: 14px 16px;
         border-radius: 8px;
         background-color: #fff8e1;
-        width: 70px;
+        width: 75px;
         height: 70px;
         display: flex;
         align-items: center;
         flex-direction: column;
         gap: 5px;
         justify-content: center;
+        cursor: pointer;
       }
  
       .class-34 {
         color: #a27c00;
-        font-size: 13px;
+        font-size: 12px;
         font-weight: 500;
+        font-family: "inter";
       }
  
       .class-35 {
@@ -391,6 +441,7 @@
         font-size: 16px;
         text-align: center;
         font-weight: 700;
+        font-family: "inter";
       }
  
       .class-41 {
@@ -398,19 +449,21 @@
         padding: 10px 16px;
         border-radius: 8px;
         background-color: #1a7dd41f;
-        width: 70px;
+        width: 75px;
         height: 70px;
         display: flex;
         align-items: center;
         flex-direction: column;
         gap: 5px;
         justify-content: center;
+        cursor: pointer;
       }
  
       .class-42 {
         color: #1a7dd4;
-        font-size: 13px;
+        font-size: 12px;
         font-weight: 500;
+        font-family: "inter";
       }
  
       .class-43 {
@@ -478,6 +531,7 @@
         font-size: 22px;
         text-align: center;
         padding: 6px;
+        font-family: "inter";
       }
  
       .class-50 {
@@ -499,11 +553,12 @@
         vertical-align: top;
         color: #ffffff;
         font-weight: 500;
-        font-size: 22px;
+        font-size: 20px;
         writing-mode: vertical-rl;
         transform: rotate(360deg);
         text-align: center;
         padding: 6px;
+        font-family: "inter";
       }
  
       .class-52 {
@@ -573,9 +628,10 @@
         vertical-align: top;
         color: #ffffff;
         font-weight: 600;
-        font-size: 18px;
+        font-size: 16px;
         text-align: center;
         padding: 6px;
+        font-family: "inter";
       }
  
       .class-58 {
@@ -623,11 +679,12 @@
         vertical-align: top;
         color: #ffffff;
         font-weight: 600;
-        font-size: 18px;
+        font-size: 16px;
         writing-mode: vertical-rl;
         transform: rotate(180deg);
         text-align: center;
         padding: 6px;
+        font-family: "inter";
       }
  
       .class-63 {
@@ -668,19 +725,19 @@
           />
  
           <div class="class-6">
-            <h2>Want to be amazed?</h2>
+            <h2 class="class-6-h2">Want to be amazed?</h2>
  
-            <p>
+            <p class="class-6-p">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua
             </p>
  
-            <button class="class-7">Click here</button>
+            <button class="class-7 button-green">Click here</button>
           </div>
         </div>
  
         <div class="class-8">
-          <button class="class-9">
+          <button class="class-9 button-white">
             <svg
               width="30"
               height="26"
@@ -732,7 +789,7 @@
             <h2 class="class-14">FLAGSHIP PROJECTS</h2>
  
             <div class="class-15">
-              <div class="class-16">
+              <div class="class-16 box-hover">
                 <!-- <img src="drop.png" width="24px" height="24px" /> -->
                 <svg width="30" height="28" viewBox="0 0 30 28" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <g clip-path="url(#clip0_2094_538)">
@@ -753,7 +810,7 @@
                 <h5 class="class-17">Drop</h5>
               </div>
  
-              <div class="class-16">
+              <div class="class-16 box-hover">
                 <!-- <img src="drop.png" width="24px" height="24px" /> -->
                 <svg width="32" height="30" viewBox="0 0 32 30" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <g clip-path="url(#clip0_2094_562)">
@@ -771,7 +828,7 @@
                 <h5 class="class-17">MARC</h5>
               </div>
  
-              <div class="class-16">
+              <div class="class-16 box-hover">
                 <!-- <img src="drop.png" width="24px" height="24px" /> -->
                 <svg width="30" height="28" viewBox="0 0 30 28" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <g clip-path="url(#clip0_2094_581)">
@@ -792,7 +849,7 @@
                 <h5 class="class-17">ART</h5>
               </div>
  
-              <div class="class-16">
+              <div class="class-16 box-hover">
                 <!-- <img src="drop.png" width="24px" height="24px" /> -->
                 <svg width="39" height="36" viewBox="0 0 39 36" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <g clip-path="url(#clip0_2094_606)">
@@ -844,17 +901,17 @@
             <h2 class="class-28">Our 4 Pillars</h2>
  
             <div class="class-15">
-              <div class="class-29">
+              <div class="class-29 box-hover">
                 <!-- <img src="community.png" width="21px" height="24px" /> -->
                 <svg width="21" height="19" viewBox="0 0 21 19" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd" clip-rule="evenodd" d="M11.208 2.304C10.986 2.26875 10.7588 2.25 10.527 2.25C10.278 2.25 10.0335 2.27175 9.79651 2.31225C9.60601 1.94475 9.36449 1.608 9.07949 1.31175C8.30249 0.50325 7.21049 0 6.00224 0C3.64574 0 1.7325 1.91325 1.7325 4.269C1.7325 5.64225 2.38275 6.86475 3.39075 7.64625C2.79375 7.9365 2.244 8.32575 1.7655 8.80425C0.635253 9.9345 0 11.4683 0 13.0673V14.2065C0 15.4493 1.00725 16.4565 2.25 16.4565H4.4715C4.4715 17.6993 5.47875 18.7065 6.7215 18.7065H14.2785C15.5212 18.7065 16.5285 17.6993 16.5285 16.4565H18.75C19.9928 16.4565 21 15.4493 21 14.2065V13.0673C21 11.4683 20.3647 9.9345 19.2345 8.80425C18.756 8.32575 18.2063 7.9365 17.6093 7.64625C18.6173 6.86475 19.2675 5.64225 19.2675 4.269C19.2675 1.91325 17.3543 0 14.9978 0C13.7895 0 12.6975 0.50325 11.9205 1.31175C11.6378 1.60575 11.397 1.9395 11.208 2.304ZM15.0285 15.3173V16.4565C15.0285 16.8705 14.6932 17.2065 14.2785 17.2065H6.7215C6.30675 17.2065 5.9715 16.8705 5.9715 16.4565V15.3173C5.9715 14.1158 6.44851 12.9638 7.29751 12.1148C8.14726 11.2658 9.2985 10.7888 10.5 10.7888C11.7015 10.7888 12.8527 11.2658 13.7025 12.1148C14.5515 12.9638 15.0285 14.1158 15.0285 15.3173ZM16.518 14.9565H18.75C19.164 14.9565 19.5 14.6205 19.5 14.2065C19.5 13.8615 19.5 13.4745 19.5 13.0673C19.5 11.8658 19.023 10.7138 18.174 9.86475C17.3242 9.01575 16.1723 8.53875 14.9715 8.53875C14.9715 8.53875 14.9715 8.53875 14.9707 8.53875C14.7307 8.53875 14.4923 8.5575 14.2575 8.595C13.9755 9.1005 13.593 9.54375 13.1377 9.89625C13.7347 10.1865 14.2852 10.5758 14.763 11.0543C15.8085 12.0998 16.4302 13.4888 16.518 14.9565ZM6.80175 8.60475C6.54825 8.5605 6.2895 8.53875 6.02925 8.53875C6.0285 8.53875 6.0285 8.53875 6.0285 8.53875C4.82775 8.53875 3.67575 9.01575 2.826 9.86475C1.977 10.7138 1.5 11.8658 1.5 13.0673V14.2065C1.5 14.6205 1.836 14.9565 2.25 14.9565H4.48201C4.56976 13.4888 5.19151 12.0998 6.23701 11.0543C6.72376 10.5668 7.28551 10.1723 7.89526 9.87975C7.45201 9.5325 7.07925 9.099 6.80175 8.60475ZM10.527 3.75C12.0555 3.75 13.296 4.99125 13.296 6.519C13.296 8.0475 12.0555 9.28875 10.527 9.28875C8.99851 9.28875 7.758 8.0475 7.758 6.519C7.758 4.99125 8.99851 3.75 10.527 3.75ZM8.37076 2.835C8.26426 2.66025 8.139 2.4975 7.998 2.35125C7.494 1.827 6.78599 1.5 6.00224 1.5C4.47374 1.5 3.2325 2.74125 3.2325 4.269C3.2325 5.7975 4.47374 7.03875 6.00224 7.03875C6.09824 7.03875 6.1935 7.0335 6.28725 7.02375C6.26775 6.85875 6.258 6.69 6.258 6.519C6.258 4.94925 7.10701 3.57675 8.37076 2.835ZM14.766 7.029C14.8425 7.035 14.9198 7.03875 14.9978 7.03875C16.5263 7.03875 17.7675 5.7975 17.7675 4.269C17.7675 2.74125 16.5263 1.5 14.9978 1.5C14.214 1.5 13.506 1.827 13.002 2.35125C12.867 2.4915 12.747 2.646 12.6435 2.81175C13.929 3.5475 14.796 4.93275 14.796 6.519C14.796 6.6915 14.7855 6.86175 14.766 7.029Z" fill="#D86221"/>
                     </svg>
  
  
-                <h5 class="class-30">community</h5>
+                <h5 class="class-30">Community</h5>
               </div>
  
-              <div class="class-29">
+              <div class="class-29 box-hover">
                 <!-- <img src="community.png" width="21px" height="24px" /> -->
                 <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M19 11C19.6 11 20 10.6 20 10C20 9.5 19.6 9 19 9H18V7H19C19.6 7 20 6.6 20 6C20 5.5 19.6 5 19 5H18V4C18 2.9 17.1 2 16 2H15V1C15 0.5 14.6 0 14 0C13.5 0 13 0.4 13 1V2H11V1C11 0.5 10.6 0 10 0C9.4 0 9 0.4 9 1V2H7V1C7 0.5 6.6 0 6 0C5.4 0 5 0.4 5 1V2H4C2.9 2 2 2.9 2 4V5H1C0.4 5 0 5.4 0 6C0 6.5 0.4 7 1 7H2V9H1C0.4 9 0 9.4 0 10C0 10.5 0.4 11 1 11H2V13H1C0.4 13 0 13.4 0 14C0 14.5 0.4 15 1 15H2V16C2 17.1 2.9 18 4 18H5V19C5 19.5 5.4 20 6 20C6.6 20 7 19.6 7 19V18H9V19C9 19.5 9.4 20 10 20C10.6 20 11 19.6 11 19V18H13V19C13 19.5 13.4 20 14 20C14.5 20 15 19.6 15 19V18H16C17.1 18 18 17.1 18 16V15H19C19.6 15 20 14.6 20 14C20 13.5 19.6 13 19 13H18V11H19ZM16 16H4V4H16V16Z" fill="#D86221"/>
@@ -864,7 +921,7 @@
                 <h5 class="class-30">TECH</h5>
               </div>
  
-              <div class="class-29">
+              <div class="class-29 box-hover">
                 <!-- <img src="community.png" width="21px" height="24px" /> -->
                 <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <g clip-path="url(#clip0_2094_633)">
@@ -882,7 +939,7 @@
                 <h5 class="class-30">Livelihood</h5>
               </div>
  
-              <div class="class-29">
+              <div class="class-29  box-hover">
                 <!-- <img src="community.png" width="21px" height="24px" /> -->
                 <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <g clip-path="url(#clip0_2094_642)">
@@ -911,7 +968,7 @@
             <h2 class="class-32">More Details</h2>
  
             <div class="class-15">
-              <div class="class-33">
+              <div class="class-33 box-hover">
                 <!-- <img src="news.png" width="24px" height="24px" /> -->
                 <svg width="30" height="30" viewBox="0 0 25 26" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd" clip-rule="evenodd"
@@ -925,7 +982,7 @@
                 <h5 class="class-34">News</h5>
               </div>
  
-              <div class="class-33">
+              <div class="class-33 box-hover">
                 <!-- <img src="news.png" width="24px" height="24px" /> -->
                 <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <g clip-path="url(#clip0_2094_688)">
@@ -944,7 +1001,7 @@
                 <h5 class="class-34">Gallery</h5>
               </div>
  
-              <div class="class-33">
+              <div class="class-33 box-hover">
                 <!-- <img src="news.png" width="24px" height="24px" /> -->
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <g clip-path="url(#clip0_2094_712)">
@@ -964,7 +1021,7 @@
                 <h5 class="class-34">CSR</h5>
               </div>
  
-              <div class="class-33">
+              <div class="class-33 box-hover">
                 <!-- <img src="news.png" width="24px" height="24px" /> -->
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <g clip-path="url(#clip0_2094_696)">
@@ -1002,7 +1059,7 @@
             <h2 class="class-40">Social Media</h2>
  
             <div class="class-15">
-              <div class="class-41">
+              <div class="class-41 box-hover">
                 <!-- <img src="twitter.png" width="22px" height="24px" /> -->
                 <svg width="36" height="36" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <g clip-path="url(#clip0_2094_677)">
@@ -1020,7 +1077,7 @@
                 <h5 class="class-42">Twitter</h5>
               </div>
  
-              <div class="class-41">
+              <div class="class-41 box-hover">
                 <!-- <img src="twitter.png" width="22px" height="24px" /> -->
                 <svg width="14" height="26" viewBox="0 0 14 26" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path
@@ -1032,7 +1089,7 @@
                 <h5 class="class-42">Facebook</h5>
               </div>
  
-              <div class="class-41">
+              <div class="class-41 box-hover">
                 <!-- <img src="twitter.png" width="22px" height="24px" /> -->
                 <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M12.5841 2.26753C15.9441 2.26753 16.342 2.28012 17.6693 2.34064C18.4673 2.35041 19.2578 2.49695 20.0063 2.7739C20.5491 2.98324 21.0421 3.30392 21.4535 3.71531C21.8649 4.12669 22.1856 4.61966 22.3949 5.16248C22.6719 5.911 22.8184 6.70147 22.8282 7.49952C22.8881 8.82685 22.9013 9.22474 22.9013 12.5847C22.9013 15.9447 22.8887 16.3426 22.8282 17.6699C22.8184 18.4679 22.6719 19.2584 22.3949 20.0069C22.1856 20.5497 21.8649 21.0427 21.4535 21.4541C21.0421 21.8655 20.5491 22.1862 20.0063 22.3955C19.2578 22.6724 18.4673 22.819 17.6693 22.8288C16.3426 22.8887 15.9447 22.9019 12.5841 22.9019C9.22355 22.9019 8.82565 22.8893 7.49893 22.8288C6.70087 22.819 5.9104 22.6724 5.16188 22.3955C4.61906 22.1862 4.12609 21.8655 3.71471 21.4541C3.30332 21.0427 2.98264 20.5497 2.7733 20.0069C2.49635 19.2584 2.34981 18.4679 2.34004 17.6699C2.28012 16.3426 2.26694 15.9447 2.26694 12.5847C2.26694 9.22474 2.27952 8.82685 2.34004 7.49952C2.34981 6.70147 2.49635 5.911 2.7733 5.16248C2.98264 4.61966 3.30332 4.12669 3.71471 3.71531C4.12609 3.30392 4.61906 2.98324 5.16188 2.7739C5.9104 2.49695 6.70087 2.35041 7.49893 2.34064C8.82625 2.28072 9.22415 2.26753 12.5841 2.26753ZM12.5841 0C9.16842 0 8.73816 0.0143818 7.39586 0.0755046C6.3514 0.0962791 5.31804 0.294037 4.33972 0.660366C3.50047 0.976566 2.74033 1.47208 2.11233 2.11233C1.4715 2.74056 0.975564 3.50114 0.659167 4.34092C0.292838 5.31924 0.0950807 6.3526 0.0743062 7.39705C0.0143819 8.73816 0 9.16842 0 12.5841C0 15.9998 0.0143818 16.43 0.0755046 17.7723C0.0962791 18.8168 0.294037 19.8502 0.660366 20.8285C0.976411 21.6682 1.47193 22.4287 2.11233 23.0571C2.74068 23.6975 3.50125 24.193 4.34092 24.509C5.31924 24.8754 6.3526 25.0731 7.39705 25.0939C8.73936 25.1538 9.16782 25.1694 12.5853 25.1694C16.0028 25.1694 16.4312 25.155 17.7735 25.0939C18.818 25.0731 19.8514 24.8754 20.8297 24.509C21.6654 24.1851 22.4243 23.6903 23.0578 23.0564C23.6914 22.4224 24.1856 21.6632 24.509 20.8273C24.8754 19.849 25.0731 18.8156 25.0939 17.7711C25.1538 16.43 25.1682 15.9998 25.1682 12.5841C25.1682 9.16842 25.1538 8.73816 25.0927 7.39586C25.0719 6.3514 24.8742 5.31804 24.5078 4.33972C24.1918 3.50005 23.6963 2.73948 23.0559 2.11113C22.4275 1.47073 21.667 0.975213 20.8273 0.659167C19.849 0.292838 18.8156 0.0950807 17.7711 0.0743062C16.43 0.0143819 15.9998 0 12.5841 0Z" fill="#1A7DD4"/>
@@ -1044,7 +1101,7 @@
                 <h5 class="class-42">Instagram</h5>
               </div>
  
-              <div class="class-41">
+              <div class="class-41 box-hover">
                 <!-- <img src="twitter.png" width="22px" height="24px" /> -->
                 <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M29.7336 8.32453C29.3951 7.06609 28.4029 6.07407 27.1446 5.73521C24.8459 5.10626 15.651 5.10626 15.651 5.10626C15.651 5.10626 6.45644 5.10626 4.15775 5.71137C2.92369 6.04987 1.90729 7.06627 1.56879 8.32453C0.963867 10.623 0.963867 15.3898 0.963867 15.3898C0.963867 15.3898 0.963867 20.1807 1.56879 22.4551C1.90765 23.7134 2.89949 24.7054 4.15793 25.0443C6.48064 25.6734 15.6514 25.6734 15.6514 25.6734C15.6514 25.6734 24.8459 25.6734 27.1446 25.0683C28.403 24.7296 29.3951 23.7376 29.7339 22.4793C30.3387 20.1807 30.3387 15.414 30.3387 15.414C30.3387 15.414 30.3629 10.623 29.7336 8.32453ZM12.7235 19.7936V10.9861L20.3696 15.3898L12.7235 19.7936Z" fill="#1A7DD4"/>
